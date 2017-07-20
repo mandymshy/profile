@@ -1,44 +1,181 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.2.1';i.angular='4.1.0';i.staticDir='build/';})(window);
-  </script>
-  <meta charset="UTF-8">
-  <title>Ionic App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+<html>
+<title>Mandy's Profile</title>
+<head></head>
 
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
- 
-  <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
+<style>
+h1{
+  text-align: right;
+}
+h2{
+  text-align: center;
 
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
+}
+h1,h2,{font-family: "Oswald"
+}
+body {
+  font-family: "Open Sans"
+}
 
-  <link href="build/main.css" rel="stylesheet">
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.social {
+  position: fixed;
+  top: 20px;
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background:   #B8ABBD;
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: #ecb3ff;
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: #0a94c2;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
 
-</head>
-<body>
+body {
+  background: #25343F;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+.nav{
+  padding: 3px;
+  text-underline-position: none;
 
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
+}
+.button1:hover {
+    background-color: grey;
+  
+}
 
-  <!-- The polyfills js is generated during the build process -->
-  <script src="build/polyfills.js"></script>
+.button2:hover{
+    background-color:  grey;
+   }
 
-  <!-- The bundle js is generated during the build process -->
-  <script src="build/main.js"></script>
+.button2:hover {
+    background-color: grey;
+}
+
+.button3:hover{
+   
+    background-color: grey;
+}
+
+.button3:hover {
+background-color: grey;  
+}
+
+.button4:hover {
+
+  background-color: grey;
+}
+
+.button4:hover {
+background-color: grey;
+}
+.button5:hover {
+  background-color: grey;
+}
+
+.button6:hover {
+    background-color: grey;  
+}
+</style>
+
+<div class="nav">
+        <a href="bio.html"  class="button1" style="margin: 7px;">BIO</a>
+        <a href="Index2.html" class="button2" style="margin: 7px;">PROJECT</a>
+        <a href="home2.html" class="button3" style="margin: 7px;">APP</a>
+        <a href="team.html" class="button4" style="margin: 7px;">TEAM</a>
+        <a href="a.html" class="button5" style="margin: 7px;">ACHIEVEMENTS</a>
+        
+</div>
+
+<nav class="social">
+<div style="max-width:1600px">
+
+          <ul>
+            <li><a href="https://twitter.com/mandymakweni" target="blank">Twitter <img src="images/twitter.png"></a></li>
+              <li><a href="https://facebook.com/mandymakweni" target="blank">Facebook<img src="images/facebook.png"></a></li>
+              <li><a href="http://Instagram.com/mandymakweni" target="blank">Instagram<img src="images/instagram.png"></a></li>
+                <li><a href="https://github.com/mandymshy" target="blank">Github<img src="images/github.png" style="width: 70px; height: 50px;"></i></a></li>
+                               
+          </ul>
+      </nav>
+        </div>
+      
+        <hr>
+  <!-- Header -->
+  <header>
+    <h1><b>MANDY MAKWENI</b></h1>
+    <h2><i>WELCOME TO </i><span><b>MANDY'S WORLD<b></span></h2>
+  
+           <img src="images/l.jpg" style="width:100% " padding="large" padding="16" >
 
 </body>
 </html>
