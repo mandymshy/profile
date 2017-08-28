@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html>
 <title>Mandy's Profile</title>
-<head></head>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
+  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 h1{
-  text-align: right;
+  text-align: center;
 }
 h2{
   text-align: center;
 
 }
-h1,h2,{font-family: "Oswald"
+h3{
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"
 }
 body {
   font-family: "Open Sans"
 }
 
+}
+.mySlides {display:none;}
+
 a {
   color: #fff;
   text-decoration: none;
 }
- h1 {
+.me {
+  width: 400px;
+  margin: 90px auto;
+}
+.me p,
+.me h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
+}
+.me p {
+  font-weight: 200;
+}
+.me span {
+  font-weight: bold;
 }
 .social {
   position: fixed;
@@ -103,68 +142,34 @@ body {
   color: #fff;
   font-family: 'Raleway', sans-serif;
 }
-.nav{
-  padding: 3px;
-  text-underline-position: none;
-
-}
-.button1:hover {
-    background-color: grey;
-  
-}
-
-.button2:hover{
-    background-color:  grey;
-   }
-
-.button2:hover {
-    background-color: grey;
-}
-
-.button3:hover{
-   
-    background-color: grey;
-}
-
-.button3:hover {
-background-color: grey;  
-}
-
-.button4:hover {
-
-  background-color: grey;
-}
-
-.button4:hover {
-background-color: grey;
-}
-.button5:hover {
-  background-color: grey;
-}
-
-.button6:hover {
-    background-color: grey;  
+nav{
+  padding: 40px;
+  text-align: center;
+  color: black;
+  position: center;
 }
 </style>
-
 <div class="nav">
-        <a href="bio.html"  class="button1" style="margin: 7px;">BIO</a>
-        <a href="Index2.html" class="button2" style="margin: 7px;">PROJECT</a>
-        <a href="home2.html" class="button3" style="margin: 7px;">APP</a>
-        <a href="team.html" class="button4" style="margin: 7px;">TEAM</a>
-        <a href="a.html" class="button5" style="margin: 7px;">ACHIEVEMENTS</a>
-        
-</div>
+        <a href="bio.html" class="w3-bar-item w3-button">BIO</a>
+        <a href="a.html" class="w3-bar-item w3-button">ACHIEVEMENTS</a>
+        <a href="Index2.html" class="w3-bar-item w3-button">PROJECT</a>
+        <a href="home2.html" class="w3-bar-item w3-button">APP</a>
 
+        <a href="team.html" class="w3-bar-item w3-button">TEAM</a>
+       
+</div>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
 <nav class="social">
-<div style="max-width:1600px">
+<div class="w3-content" style="max-width:1600px">
 
           <ul>
-            <li><a href="https://twitter.com/mandymakweni" target="blank">Twitter <img src="images/twitter.png"></a></li>
-              <li><a href="https://facebook.com/mandymakweni" target="blank">Facebook<img src="images/facebook.png"></a></li>
-              <li><a href="http://Instagram.com/mandymakweni" target="blank">Instagram<img src="images/instagram.png"></a></li>
-                <li><a href="https://github.com/mandymshy" target="blank">Github<img src="images/github.png" style="width: 70px; height: 50px;"></i></a></li>
-                               
+            <li><a href="https://twitter.com/mandymakweni" target="blank">Twitter <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://facebook.com/mandymakweni">Facebook <i class="fa fa-facebook"></i></a></li>
+              <li><a href="http://Instagram.com/mandymakweni">Instagram<i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/mandymshy">Github<i class="fa fa-github"></i></a></li>
+               
+                            
           </ul>
       </nav>
         </div>
@@ -173,9 +178,11 @@ background-color: grey;
   <!-- Header -->
   <header>
     <h1><b>MANDY MAKWENI</b></h1>
-    <h2><i>WELCOME TO </i><span><b>MANDY'S WORLD<b></span></h2>
+    <h2><i>WELCOME TO </i><b>MANDY'S WORLD<b></h2>
   
            <img src="images/l.jpg" style="width:100% " padding="large" padding="16" >
+
+
 
 </body>
 </html>
